@@ -10,7 +10,7 @@ class Animal(Base):
     surname = Column(String(50), nullable=False)
     age = Column(Integer, nullable=False)
     gender = Column(String(1), nullable=False)
-    specie = Column(String(50), ForeignKey('species.name'), nullable=False)
+    specie = Column(Integer, ForeignKey('species.id'), nullable=False)
 
     def __repr__(self):
         return f'Animal: {self.surname} Age: {self.age} Gender: {self.gender} Specie: {self.specie}'
