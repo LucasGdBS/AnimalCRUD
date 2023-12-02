@@ -9,7 +9,7 @@ class Specie(Base):
 
     id = Column(Integer, primary_key=True)
     specie_name = Column(String(50), nullable=False)
-    animals = relationship('Animal', backref='specie', lazy='subquery')
+    animals = relationship('Animal', lazy='subquery', back_populates='species')
 
     def __repr__(self):
         return f'Specie: {self.specie_name}'

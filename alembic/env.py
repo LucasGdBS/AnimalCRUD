@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from decouple import config as decouple_config
 from alembic import context
-from data_base.models import animals_orm
+from data_base.models import specie_orm, animals_orm
 
 
 
@@ -25,6 +25,7 @@ config.set_main_option("sqlalchemy.url", decouple_config('DATABASE_URL'))
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 target_metadata = animals_orm.Base.metadata
+target_metadata = specie_orm.Base.metadata
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
