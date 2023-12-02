@@ -1,0 +1,40 @@
+from models.animals_orm import Animal
+from configs.connection import DBConnectionHandler
+from sqlalchemy.orm.exc import NoResultFound
+
+class AnimalsRepository:
+    def select_all(self):
+        with DBConnectionHandler() as db:
+            try:
+                return db.session.query(Animal).all()
+            except NoResultFound:
+                return None
+            except Exception as e:
+                raise e
+    
+    def select_by_id(self, id):
+        with DBConnectionHandler() as db:
+            try:
+                return db.session.query(Animal).filter(Animal.id == id).one()
+            except NoResultFound:
+                return None
+            except Exception as e:
+                raise e
+    
+    def select_by_surname(self, surname):
+        with DBConnectionHandler() as db:
+            try:
+                return db.session.query(Animal).filter(Animal.surname == surname).all()
+            except NoResultFound:
+                return None
+            except Exception as e:
+                raise e
+    
+    def insert(self, animal: Animal):
+        with DBConnectionHandler() as db:
+            try:
+                db.session.add(animal)
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                raise e
