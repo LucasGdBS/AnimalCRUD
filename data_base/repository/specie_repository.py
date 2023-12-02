@@ -1,5 +1,5 @@
-from models.specie_orm import Specie
-from configs.connection import DBConnectionHandler
+from data_base.models.specie_orm import Specie
+from data_base.configs.connection import DBConnectionHandler
 from sqlalchemy.orm.exc import NoResultFound
 
 class SpecieRepository:

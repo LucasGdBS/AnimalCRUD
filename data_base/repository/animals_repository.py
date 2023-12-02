@@ -1,5 +1,5 @@
-from models.animals_orm import Animal
-from configs.connection import DBConnectionHandler
+from data_base.models.animals_orm import Animal
+from data_base.configs.connection import DBConnectionHandler
 from sqlalchemy.orm.exc import NoResultFound
 
 class AnimalsRepository:
