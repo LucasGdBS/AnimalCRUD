@@ -9,7 +9,7 @@ class DBConnectionHandler:
     def __init__(self):
         '''Constructor method of the class'''
 
-        self.__connection_string = config('CONNECT')
+        self.__connection_string = config('DATABASE_URL')
         self.__engine = self.__create_database_egine()
         self.session = None
 
