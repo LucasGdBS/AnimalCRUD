@@ -4,8 +4,7 @@ from time import sleep
 
 sys.path.append("..")
 
-from data_base.repository.animals_repository import AnimalsRepository
-from data_base.models.animals_orm import Animal
+from data_base.repository.animals_repository import AnimalsRepository, Animal
 from data_base.repository.specie_repository import SpecieRepository
 
 st.set_page_config(

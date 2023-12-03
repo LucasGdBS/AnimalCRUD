@@ -3,8 +3,7 @@ import sys
 
 sys.path.append("..")
 
-from data_base.models.specie_orm import Specie
-from data_base.repository.specie_repository import SpecieRepository
+from data_base.repository.specie_repository import SpecieRepository, Specie
 
 st.set_page_config(
     page_title="Inserir Espécies",

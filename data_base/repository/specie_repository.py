@@ -42,7 +42,11 @@ class SpecieRepository:
     def update(self, specie: Specie):
         with DBConnectionHandler() as db:
             try:
-                db.session.merge(specie)
+                db.session.query(Specie).filter(Specie.id == specie.id).update(
+                    {
+                        'specie_name': specie.specie_name
+                    }
+                )
                 db.session.commit()
             except Exception as e:
                 db.session.rollback()
