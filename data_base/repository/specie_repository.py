@@ -38,3 +38,21 @@ class SpecieRepository:
             except Exception as e:
                 db.session.rollback()
                 raise e
+    
+    def update(self, specie: Specie):
+        with DBConnectionHandler() as db:
+            try:
+                db.session.merge(specie)
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                raise e
+    
+    def delete(self, specie: Specie):
+        with DBConnectionHandler() as db:
+            try:
+                db.session.delete(specie)
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                raise e

@@ -38,3 +38,28 @@ class AnimalsRepository:
             except Exception as e:
                 db.session.rollback()
                 raise e
+    
+    def update(self, animal: Animal):
+        with DBConnectionHandler() as db:
+            try:
+                db.session.query(Animal).filter(Animal.id == animal.id).update(
+                    {
+                        'surname': animal.surname,
+                        'age': animal.age,
+                        'gender': animal.gender,
+                        'specie_id': animal.specie_id
+                    }
+                )
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                raise e
+
+    def delete(self, animal: Animal):
+        with DBConnectionHandler() as db:
+            try:
+                db.session.delete(animal)
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                raise e

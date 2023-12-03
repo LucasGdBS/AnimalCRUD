@@ -13,5 +13,5 @@ class Animal(Base):
     specie_id = Column(Integer, ForeignKey('species.id'), nullable=False)
 
     def __repr__(self):
-        return f'Animal: {self.surname} Age: {self.age} Gender: {self.gender} Specie: {self.specie_id}'
+        return f'{self.surname}'
     
