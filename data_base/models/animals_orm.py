@@ -12,7 +12,6 @@ class Animal(Base):
     age = Column(Integer, nullable=False)
     gender = Column(String(1), nullable=False)
     specie_id = Column(Integer, ForeignKey('species.id'), nullable=False)
-    species = relationship('Specie', back_populates='animals')
 
     def __repr__(self):
         return f'Animal: {self.surname} Age: {self.age} Gender: {self.gender} Specie: {self.specie}'
