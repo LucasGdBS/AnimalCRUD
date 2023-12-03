@@ -16,7 +16,7 @@ st.markdown('# Inserir Animal')
 
 st.markdown('## Insira os dados do animal')
 
-surname = st.text_input("Sobrenome:")
+surname = st.text_input("Apelido:")
 age = st.number_input("Idade:", min_value=0, max_value=200, value=0)
 gender = st.selectbox("Gênero:", ["Masculino", "Feminino"])
 #TODO - Mudar para os valores possiveis ser as especies cadastradas no banco de dados
