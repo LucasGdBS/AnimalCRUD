@@ -21,10 +21,10 @@ class SpecieRepository:
             except Exception as e:
                 raise e
     
-    def select_by_name(self, name):
+    def select_by_name(self, name:str):
         with DBConnectionHandler() as db:
             try:
-                return db.session.query(Specie).filter(Specie.specie_name == name).all()
+                return db.session.query(Specie).filter(Specie.specie_name == name).first()
             except NoResultFound:
                 return None
             except Exception as e:

@@ -8,8 +8,8 @@ class Specie(Base):
     __tablename__ = 'species'
 
     id = Column(Integer, primary_key=True)
-    specie_name = Column(String(50), nullable=False)
+    specie_name = Column(String(50), nullable=False, unique=True)
     animals = relationship('Animal', lazy='subquery', back_populates='species')
 
     def __repr__(self):
-        return f'Specie: {self.specie_name}'
+        return f'{self.specie_name}'
