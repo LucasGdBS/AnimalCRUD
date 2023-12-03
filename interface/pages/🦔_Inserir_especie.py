@@ -13,14 +13,15 @@ st.set_page_config(
 st.markdown('# Inserir Espécie')
 st.markdown('## Insira os dados da espécie')
 
-name = st.text_input("Nome da Espécie:")
+with st.form('form', clear_on_submit=True, border=True):
+    name = st.text_input("Nome da Espécie:")
 
-if st.button("Enviar"):
-    specie = Specie(
-        specie_name = name
-    )
-    try:
-        SpecieRepository().insert(specie)
-        st.success("Espécie inserida com sucesso!")
-    except Exception as e:
-        st.error("Ocorreu um erro ao inserir a espécie.")
+    if st.form_submit_button("Enviar"):
+        specie = Specie(
+            specie_name = name
+        )
+        try:
+            SpecieRepository().insert(specie)
+            st.success("Espécie inserida com sucesso!")
+        except Exception as e:
+            st.error("Ocorreu um erro ao inserir a espécie.")

@@ -15,21 +15,22 @@ st.markdown('# Inserir Animal')
 
 st.markdown('## Insira os dados do animal')
 
-surname = st.text_input("Apelido:")
-age = st.number_input("Idade:", min_value=0, max_value=200, value=0)
-gender = st.selectbox("Gênero:", ["Masculino", "Feminino"])
-#TODO - Mudar para os valores possiveis ser as especies cadastradas no banco de dados
-specie = st.selectbox("Espécie:", SpecieRepository().select_all()) 
+with st.form('form', clear_on_submit=True):
+    surname = st.text_input("Apelido:")
+    age = st.number_input("Idade:", min_value=0, max_value=200, value=0)
+    gender = st.selectbox("Gênero:", ["Masculino", "Feminino"])
+    #TODO - Mudar para os valores possiveis ser as especies cadastradas no banco de dados
+    specie = st.selectbox("Espécie:", SpecieRepository().select_all()) 
 
-if st.button("Enviar"):
-    animal = Animal(
-        surname = surname,
-        age = age,
-        gender = "M" if gender == "Masculino" else "F",
-        specie_id = specie.id
-    )
-    try:
-        AnimalsRepository().insert(animal)
-        st.success("Animal inserido com sucesso!")
-    except Exception as e:
-        st.error("Ocorreu um erro ao inserir o animal.")
+    if st.form_submit_button("Enviar"):
+        animal = Animal(
+            surname = surname,
+            age = age,
+            gender = "M" if gender == "Masculino" else "F",
+            specie_id = specie.id
+        )
+        try:
+            AnimalsRepository().insert(animal)
+            st.success("Animal inserido com sucesso!")
+        except Exception as e:
+            st.error("Ocorreu um erro ao inserir o animal.")
