@@ -20,9 +20,9 @@ animals = AnimalsRepository().select_all()
 data = {
     'Apelido': [animal.surname for animal in animals],
     'Idade': [animal.age for animal in animals],
-    'Gênero': [animal.gender for animal in animals],
+    'Gênero': ['Masculino' if animal.gender=='M' else 'Feminino' for animal in animals],
     'Espécie': [SpecieRepository().select_by_id(animal.specie_id).specie_name for animal in animals]
-}
+}    
 
 df = pd.DataFrame(data=data)
 
