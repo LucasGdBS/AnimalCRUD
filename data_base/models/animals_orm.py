@@ -1,6 +1,5 @@
 '''module that contains the class that represents the animals table in the database'''
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
 from data_base.configs.base import Base
 
 class Animal(Base):
@@ -14,5 +13,5 @@ class Animal(Base):
     specie_id = Column(Integer, ForeignKey('species.id'), nullable=False)
 
     def __repr__(self):
-        return f'Animal: {self.surname} Age: {self.age} Gender: {self.gender} Specie: {self.specie}'
+        return f'Animal: {self.surname} Age: {self.age} Gender: {self.gender} Specie: {self.specie_id}'
     
