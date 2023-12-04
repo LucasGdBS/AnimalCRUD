@@ -31,7 +31,11 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 
 ## 🖼️ Imagens da interface do projeto
 
+<details>
+  <summary>📸 Clique aqui para ver as imagens</summary>
+
 <div justify-content="center" align="center" display="flex">
+
 
 ![SideBar](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/3a098266-2fc3-4614-ab28-b483acc85c26)
 
@@ -49,8 +53,13 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 
 </div>
 
+</details>
+
 
 <div align="center">
+
+<br>
+<br>
 
 > Para mais informações ou dúvidas, entre em contato comigo através do meu
 
