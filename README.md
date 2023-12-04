@@ -29,9 +29,25 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 
 </div>
 
-## 🎥 Gifs da interface do projeto
+## 🖼️ Imagens da interface do projeto
 
+<div justify-content="center" align="center" display="flex">
 
+![SideBar](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/3a098266-2fc3-4614-ab28-b483acc85c26)
+
+![Inserir Especie](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/bd9085c2-00c0-4d9d-b63b-bdb272b54ccc)
+
+![Inserir Animal](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/f7e4037d-04ac-49d8-8eaa-3a3b8226a875)
+
+![Ver Espécies](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/04a589a3-ec01-4b48-9815-7315405b671c)
+
+![Ver Animais](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/4076053b-782c-40d3-86f4-4ace27f39e4b)
+
+![Editar Especies](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/801ad219-3978-45ab-bcf4-f4649dfb9fb3)
+
+![Editar Animais](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/6ab71189-6d35-4b2a-a486-aeb8edf0c4e0)
+
+</div>
 
 
 <div align="center">
