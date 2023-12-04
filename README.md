@@ -1,16 +1,21 @@
+<!-- markdownlint-disable MD041 MD033 MD045 -->
 ![imagemlogo](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/93fd65db-e77d-41ad-9f19-40b2f4f59543)
 
 # 🦒 Projeto AnimalCRUD
 
 ## 💡 Do que se trata o projeto?
+
 O AnimalCRUd é um projeto MVP (Minimum Viable Product) que tem como objetivo criar um CRUD (Create, Read, Update, Delete)
 de animais, e implementar em uma interface web interativa.
 
 ## 🌱 De onde surgiu?
+
 O projeto surgiu de uma necessidade de estudar e praticar os conhecimentos de banco de dados e da integração de backend com o frontend.
 
 ## 📋 Pré-requisitos
+
 Para rodar o projeto localmente é necessário ter instalado na máquina:
+
 - [Python](https://www.python.org/downloads/)
 - [PostGresql](https://www.postgresql.org/download/)
 - [DBeaver](https://dbeaver.io/download/) _(Opcional)_
@@ -36,7 +41,6 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 
 <div justify-content="center" align="center" display="flex">
 
-
 ![SideBar](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/3a098266-2fc3-4614-ab28-b483acc85c26)
 
 ![Inserir Especie](https://github.com/LucasGdBS/AnimalCRUD/assets/114539692/bd9085c2-00c0-4d9d-b63b-bdb272b54ccc)
@@ -55,7 +59,6 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 
 </details>
 
-
 <div align="center">
 
 <br>
@@ -66,4 +69,3 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasgdbs/)
 
 </div>
-
