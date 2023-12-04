@@ -3,7 +3,8 @@
 # 🦒 Projeto AnimalCRUD
 
 ## 💡 Do que se trata o projeto?
-O AnimalCRUd é um projeto MVP (Minimum Viable Product) que tem como objetivo criar um CRUD (Create, Read, Update, Delete) de animais, onde é possível cadastrar, listar, editar e excluir animais.
+O AnimalCRUd é um projeto MVP (Minimum Viable Product) que tem como objetivo criar um CRUD (Create, Read, Update, Delete)
+de animais, e implementar em uma interface web interativa.
 
 ## 🌱 De onde surgiu?
 O projeto surgiu de uma necessidade de estudar e praticar os conhecimentos de banco de dados e da integração de backend com o frontend.
@@ -31,7 +32,8 @@ Para rodar o projeto localmente é necessário ter instalado na máquina:
 ## 🎥 Gifs da interface do projeto
 
 
-## 🔎 Para mais informações ou dúvidas
+
+
 <div align="center">
 
 > Para mais informações ou dúvidas, entre em contato comigo através do meu
