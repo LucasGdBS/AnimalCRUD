@@ -5,7 +5,7 @@
 
 ## 💡 Do que se trata o projeto?
 
-O AnimalCRUd é um projeto MVP (Minimum Viable Product) que tem como objetivo criar um CRUD (Create, Read, Update, Delete)
+O AnimalCRUd é o MVP (Minimum Viable Product) de um projeto que tem como objetivo criar um CRUD (Create, Read, Update, Delete)
 de animais, e implementar em uma interface web interativa.
 
 ## 🌱 De onde surgiu?
